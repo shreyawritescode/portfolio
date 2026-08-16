@@ -1620,6 +1620,13 @@
       border-radius: 18px;
       padding: 30px;
       box-shadow: 0 0 40px rgba(25, 225, 255, .07);
+      transition: transform .4s cubic-bezier(.2, .8, .2, 1), box-shadow .4s, border-color .4s;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(25, 225, 255, .32);
+      box-shadow: 0 22px 50px rgba(0, 0, 0, .4), 0 0 40px rgba(25, 225, 255, .1);
     }
 
     .cert-badge {
@@ -2211,6 +2218,7 @@
           <span class="hchip"><span class="pip"></span>KubeCon India · 2024</span>
           <span class="hchip"><span class="pip"></span>Current / Kafka Summit</span>
           <span class="hchip"><span class="pip"></span>Confluent Certified</span>
+          <span class="hchip"><span class="pip"></span>CKA Certified</span>
         </div>
       </div>
     </div>
@@ -2427,8 +2435,8 @@
         <h2>Certified, and recognised for it.</h2>
       </div>
       <div class="creds-grid">
-        <div class="certs-col" style="display: flex; flex-direction: column; gap: 20px;">
-          <div class="cert-card reveal">
+        <div class="certs-col" style="display: flex; flex-direction: column; gap: 20px; height: 100%;">
+          <div class="cert-card reveal" style="flex: 1; align-items: center;">
             <div class="cert-badge">◈</div>
             <div>
               <div class="cert-name">Data Streaming Engineer Foundations</div>
@@ -2442,7 +2450,7 @@
               <span class="cert-tag">Confluent · Verified</span>
             </div>
           </div>
-          <div class="cert-card reveal">
+          <div class="cert-card reveal" style="flex: 1; align-items: center;">
             <div class="cert-badge">⎈</div>
             <div>
               <div class="cert-name">CKA Certified</div>
